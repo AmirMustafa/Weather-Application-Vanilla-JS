@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="module" src="lib/app.js"></script>
+</head>
+<body>
+<header class="text-center">
+    <h2 class="text-center" style="font-weight:600;margin-top:20px">Weather Application</h2>
+</header>
+<div class="main">
+    <div id="search">
+        <div class="row" style="margin:auto 200px">
+            <div class="col-sm-6">
+                <label for="city">City Name</label>
+                <input type="text" id="city" class="form-control">
+            </div>
+
+             <div class="col-sm-6">
+                <label for="cars">Select Language</label>
+                <select name="lang" id="lang" class="form-control">
+                    <option value="en">English</option>
+                </select>
+             </div>
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary" style="margin:20px;">Show Weather!</button>
+            </div>
+        </div>
+    </div> 
+    <div id="load">Loading...</div>
+    <div id="error">
+        <h2 id="errormsg">City not found!</h2>
+    </div>
+    
+    <div  id="weather" class="card">
+        <h2 id="weatherCity" style="margin-top:40px">Brussels</h2>
+        <center><h3 id="weatherDescription" style="margin-top:20px">Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3></center>
+        <h1 id="weatherTemperature">1</h1>
+        <div class="sky">
+            <img src='https://www.linkpicture.com/q/clearsky.png' width="100px height= auto" id="weathericon" />
+        </div>
+        <table>
+            <tr>
+                <td>TUE</td>
+                <td>WED</td>
+                <td>THU</td>
+                <td>FRI</td>
+                <td>SAT</td>
+            </tr>
+            <tr>
+                <td>30°</td>
+                <td>34°</td>
+                <td>36°</td>
+                <td>34°</td>
+                <td>37°</td>
+            </tr>
+            <tr>
+                <td>17°</td>
+                <td>22°</td>
+                <td>19°</td>
+                <td>23°</td>
+                <td>19°</td>
+            </tr>
+        </table>
+    </div >
+</div>
+<script>
+    // System.import('app.js');
+</script>
+</body>
+</html>
